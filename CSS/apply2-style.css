@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary: #FFFFFF;
+    --dark: #000;
+    --light: #416099;
+}
+
+body {
+    font-family: "IBM Plex Sans";
+    background: var(--primary);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+hr {
+    border: none;
+    border-top: 1px solid rgb(104, 92, 92);
+    width: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+.sticky1 {
+    position: sticky;
+    top: 0;
+    background: var(--primary);
+    padding: 0 60px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 20px;
+}
+
+.box {
+    max-width: 1000px;
+    height: 1300px;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 50px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.experience-entry {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right-column {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-column textarea {
+    width: 480px;
+    height: 300px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field label {
+    font-size: 11px;
+}
+
+input[type="text"] {
+    width: 400px;
+    padding: 8px 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    width: 120px;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.position-date-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+select {
+    width: 250px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+  
+
+
+.date-row {
+    display: flex;
+    gap: 15px;
+}
+
+.date-field {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: right;       
+    align-items: center;
+    margin-right: 450px;
+    margin-bottom: 10px;
+    gap: 10px;                   
+}
+.button-row button,
+.button-row a {               
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+
+.back-btn {
+    background-color: var(--dark);
+    color: var(--primary);
+}
+
+.next-btn {
+    background-color: var(--light);
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--primary);
+    text-align: center;
+    padding: 10px;  
+    font-family: "IBM Plex Sans", sans-serif;
+}

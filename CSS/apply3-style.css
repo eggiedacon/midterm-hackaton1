@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary: #FFFFFF;
+    --dark: #000;
+    --light: #416099;
+}
+body {
+    font-family: IBM Plex Sans;
+    margin: 0; 
+    background: var(--primary);
+}
+.sticky1 {
+    position: sticky; 
+    top: 0;          
+    background: var(--primary);
+    padding: 0px 60px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 100px;     
+    width: auto;
+    max-height: 100px;
+}
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color:var(--dark); 
+    font-size: 20px; 
+}
+
+
+.box {
+    max-width: 1100px;
+    height: 1300px;
+    margin: auto;
+    padding: 40px;  
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 50px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+
+/* technical skills */
+.tech-skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    max-width: 1000px;
+    margin: 10px;
+    margin-right: 50px;
+    font-family: IBM Plex Sans, sans-serif;
+}
+
+.tech-skills label {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    cursor: pointer;
+    font-size: 14px; 
+    color: var(--dark);
+}
+
+.tech-skills input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+}
+
+
+
+
+
+
+/* programming languages */
+.languages {
+    display: flex;
+    gap: 40px;           
+    justify-content: space-between; 
+}
+
+.languages .field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    flex: 1;
+    min-width: 100px;     
+}
+
+.languages .field label {
+    font-size: 14px; 
+    margin: 0;       
+}
+
+.languages select {
+    width: 220px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 6px 10px;
+    font-size: 14px; 
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+
+/* references */
+.reference {
+    display: grid;         
+    padding-left: 40px;     
+    padding-right: 50px;    
+    gap: 10px;            
+}
+.reference label {
+    font-size: 11px; 
+    margin-top: 4px;
+    margin-left: 40px;
+}
+
+.name-row {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    width: 180px;
+    height: 30px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+/* position dropdown */
+select {
+    width: 190px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-left: 30px;
+
+}
+.reference {
+    display: grid;
+    margin-top: 0px;
+}
+.ref-position {
+    display: flex;
+    gap: 0px;
+    margin-top: 20px;
+}
+.wide-field input {
+    width: 400px;
+}
+
+
+
+
+
+
+.file-upload {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;   
+  padding: 40px;          
+  margin-top: 20px;
+  
+}
+input[type="file"] {
+    border: none;
+    background: transparent;
+    width: 250px;
+    margin-right: -55px;
+}
+.file-status {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.upload-caption {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  margin-top: -50px;
+}
+
+
+
+.button-row {
+    display: flex;
+    justify-content: right;       
+    align-items: center;
+    margin-right: 410px;
+    margin-bottom: 10px;
+    gap: 10px;                   
+}
+.button-row button,
+.button-row a {               
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+
+.back-btn {
+    background-color: var(--dark);
+    color: var(--primary);
+}
+
+.submit-btn {
+    background-color: var(--light);
+    color: white;
+}
+/* .submit-btn {
+    background-color: var(--light);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--primary);
+    text-align: center;
+    padding: 10px;  
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+

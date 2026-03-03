@@ -1,0 +1,262 @@
+
+ <!-- second section -->
+ <!-- third section -->
+ <!-- fourth section -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/apply-style.css">
+</head>
+<body>
+    <div class="sticky1">
+        <img src="img/ibmlogo.png" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/feed/">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/ash-dacon/">Profile</a></li>
+                <li><a href="https://www.ibm.com/careers/search">Careers</a></li>
+                <li><a href="https://www.ibm.com/mysupport/s/?language=en_US&lnk=flathl">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <br><br>
+
+    <div class="box">
+            <h2 class="big-text">Job Application Form</h2>
+                <div class="textarea">
+                    <h1>Cover Letter</h1>
+                    <form>
+                        <textarea id="message" name="message" rows="10" cols="80" 
+                            placeholder="Type your cover letter here..." 
+                            oninput="countWords(this)"></textarea>
+                            <p id="word-count">0 / 600 words</p>
+                </div>
+
+                <div class="grid-group1">
+                    <div>
+                        <h1>Personal Information:</h1>
+
+                        <div class="name-row">
+                            <div class="field">
+                                <input type="text" name="last_name" required>
+                                <label><i>(Last Name)</i></label>
+                            </div>
+
+                            <div class="field">
+                                <input type="text" name="first_name" required>
+                                <label><i>(First Name)</i></label>
+                            </div>
+
+                            <div class="field">
+                                <input type="text" name="middle_name" required>
+                                <label><i>(Middle Name)</i></label>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="field">
+                                <input type="email" name="" id="" required>
+                                <label><i>&nbsp;(Email Address)</i></label>
+                            </div>
+                        </div>
+                    <br>       
+                <div class="grid-group2">
+                    <div class="field">
+                        <input type="text" name="address" required>
+                        <label><i> Address:(Street Number, Street Name, Barangay, City, Province, ZIP Code)</i></label>
+                    </div>
+                </div>
+                    <br>
+
+                <div class="grid-group3">
+                    <div class="field">
+                        <input type="tel" id="phone" required maxlength="11"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <label><i>(Phone Number)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <input type="date" required>
+                        <label><i>(Date of Birth)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <select required>
+                            <option value=""></option>
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Widowed</option>
+                            <option>Separated</option>
+                            <option>Divorced</option>
+                        </select>
+                        <label><i>(Civil Status)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option value="">Filipino</option>
+                            <option value="">Chinese</option>
+                            <option value="">American</option>
+                        </select>
+                        <label><i>(Nationality)</i></label>
+                    </div>
+                    <div class="field">
+                        <div class="radio-group">
+                            <input type="radio" name="gender" id="female" value="female" required>
+                            <label for="female">Female</label>
+
+                            <input type="radio" name="gender" id="male" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <label><i>(Gender)</i></label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="grid-group4">
+                    <div class="field">
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option value="">PhilSys National ID</option>
+                            <option value="">Passport</option>
+                            <option value="">Driver’s License</option>
+                            <option value="">UMID</option>
+                            <option value="">PRC ID</option>
+                            <option value="">Postal ID</option>
+                            <option value="">Voter’s ID</option>
+                            <option value="">PWD/Senior Citizen IDs</option>
+                        </select>
+                        <label><i>(ID)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <input type="tel" id="phone" maxlength="11"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <label><i>(ID Number)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <input type="tel" id="phone" maxlength="11"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <label><i>(SSS Number)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <input type="tel" id="phone" maxlength="11"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <label><i>(PhilHealth Number)</i></label>
+                    </div>
+
+                    <div class="field">
+                        <input type="tel" id="phone" maxlength="11"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <label><i>(TIN Number)</i></label>
+                    </div>
+                    <div class="field">
+                        <input type="tel" id="phone" maxlength="11"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <label><i>(Pag-IBIG Number)</i></label>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                   <div class="grid-group5">
+                        <div class="education-row">
+                            <div class="edu-column">
+                                <label class="main-label"><strong>Primary Education</strong></label>
+                                <input type="text" placeholder="" required>
+                                <label><i>(School Name)</i></label>
+                                <input type="text" placeholder="" required>
+                                <label><i>(School Address)</i></label>
+                            </div>
+                            <div class="edu-column">
+                                <label class="main-label"><strong>Years Attended</strong></label>
+                                <div class="date-row">
+                                    <div class="date-field">
+                                        <input type="date" required>
+                                        <label><i>From</i></label>
+                                    </div>
+                                    <div class="date-field">
+                                        <input type="date" required>
+                                        <label><i>To</i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="education-row">
+                            <div class="edu-column">
+                                <label class="main-label"><strong>Secondary Education</strong></label>
+                                <input type="text" placeholder="" required>
+                                <label><i>(School Name)</i></label>
+                                <input type="text" placeholder="" required>
+                                <label><i>(School Address)</i></label>
+                            </div>
+                            <div class="edu-column">
+                                <label class="main-label"><strong>Years Attended</strong></label>
+                                <div class="date-row">
+                                    <div class="date-field">
+                                        <input type="date" required>
+                                        <label><i>From</i></label>
+                                    </div>
+                                    <div class="date-field">
+                                        <input type="date" required>
+                                        <label><i>To</i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="education-row">
+                            <div class="edu-column">
+                                <label class="main-label"><strong>Tertiary Education</strong></label>
+                                <input type="text" placeholder="" required>
+                                <label><i>(School Name)</i></label>
+
+                                <input type="text" placeholder="" required>
+                                <label><i>(School Address)</i></label>
+                            </div>
+                            <div class="edu-column">
+                                <label class="main-label"><strong>Years Attended</strong></label>
+
+                                <div class="date-row">
+                                    <div class="date-field">
+                                        <input type="date" required>
+                                        <label><i>From</i></label>
+                                    </div>
+                                    <div class="date-field">
+                                        <input type="date" required>
+                                        <label><i>To</i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="file-upload">
+                            <p class="upload-caption">Please upload your awards or certifications (PDF or Word document) to support your application.</p>
+                            <input type="file" name="" id="">
+                        </div>  
+                    </div>
+                </div>
+            </div>   
+        </div>
+            <div class="button-container">
+                <a href="index.html" class="back-btn">Back</a>
+                <a href="apply2.html" class="next-btn">Next</a>
+            </div>
+        </form>
+            <footer>
+                <p>&copy; 2026 Concepcion, Ashley | Midterm Hackaton 1</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
